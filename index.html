@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Styles for mobile menu */
+      .mobile-menu {
+        display: none;
+        background-color: black;
+      }
+      .mobile-menu.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .gold-text {
+        color: #dfba5d;
+      }
+      .video-container {
+        width: 100%;
+        max-width: 900px; /* Adjust max-width as needed */
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      .client-images {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .client-images img {
+        width: 100px;
+        height: 100px; /* Set the desired height */
+        object-fit: cover; /* Maintain aspect ratio */
+        border-radius: 50%; /* Make the images circular */
+        margin-right: 10px; /* Adjust margin between images */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- start of navbar  -->
+    <nav
+      class="flex items-center font-sanserif justify-between px-4 py-2 bg-black text-white"
+    >
+      <div class="flex items-center">
+        <!-- Logo -->
+        <img src="/images/Logo.jpg" alt="Logo" class="h-16 w-18 mr-2 pr-4" />
+        <span class="font-bold text-xl gold-text">
+          Pioneer Security Services (pvt) ltd
+        </span>
+      </div>
+      <div class="block md:hidden">
+        <!-- Mobile menu button -->
+        <button
+          id="mobileMenuBtn"
+          class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white"
+        >
+          <svg
+            class="h-4 w-4 fill-current"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden md:block">
+        <!-- Navigation links -->
+        <ul class="flex space-x-10 text-xl gold-text">
+          <li><a href="#" class="hover:text-gray-300">Home</a></li>
+          <li><a href="#" class="hover:text-gray-300">About</a></li>
+          <li><a href="#" class="hover:text-gray-300">Services</a></li>
+          <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="mobile-menu h-screen">
+      <ul class="flex-col space-y-4 text-xl text-white gapy-4">
+        <li><a href="#" class="hover:text-gray-300">Home</a></li>
+        <li><a href="#" class="hover:text-gray-300">About</a></li>
+        <li><a href="#" class="hover:text-gray-300">Services</a></li>
+        <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- end of navbar  -->
+
+    <!-- start of home  -->
+    <div id="home">
+      <div>
+        <div>
+          <img src="/images/home-bg.jpg" alt="" class="w-full" />
+        </div>
+        <div class="flex md:flex-row flex-col">
+          <img src="/images/map-bg.jpg" alt="" class="p-8" width="730px" />
+          <div class="flex justify-center items-center text-start p-8 text-2xl">
+            Spanning the breadth of the nation, our intricate network of offices
+            assumes the mantle of vigilant sentinels, orchestrating an
+            unparalleled and far-reaching protective embrace. In every corner
+            and cranny of Pakistan, our unwavering commitment to delivering
+            matchless security services stands as an impenetrable bulwark. Our
+            nationwide presence serves as a testament to our commitment to
+            safeguarding the interests of businesses and individuals alike,
+            fortifying their peace of mind through an amalgamation of
+            cutting-edge proficiency, unwavering integrity, and a relentless
+            pursuit of excellence
+          </div>
+        </div>
+        <div class="flex justify-center flex-col items-center">
+          <div class="video-container p-8">
+            <video src="./bg-video.mp4" controls loop autoplay muted></video>
+          </div>
+          <div class="flex md:flex-row flex-col">
+            <div class="flex flex-col p-8">
+              <h2 class="text-2xl font-bold">OUR MISSION</h2>
+              <p class="text-xl">
+                Pioneer Security Services is propelled by an unwavering mission
+                to bespoke security solutions to businesses and individuals
+                across Pakistan. Our primary objective is to ensure unparalleled
+                customer contentment, and we remain steadfast in our commitment
+                to upholding a paramount position in the security industry
+                through unyielding excellence, and consummate professionalism.
+                We endeavor to be trailblazers in innovative security
+                approaches,thus fostering an environment of trust, reliability,
+                and cutting-edge proficiency.
+              </p>
+            </div>
+            <div class="flex flex-col p-8">
+              <h2 class="text-2xl font-bold">OUR VISION:</h2>
+              <p class="text-xl">
+                At Pioneer Security Services, our visionary pursuit is to ascend
+                to the zenith as the most trusted and revered security provider
+                in Pakistan. This aspirational journey necessitates the delivery
+                of not only efficient but also tailored security solutions,
+                intricately aligned with the unique and discerning requirements
+                of our esteemed clientele. We envision a future where our name
+                resonates with unwavering trust and distinction, symbolizing a
+                pinnacle of reliability and sophistication in the domain of
+                security services.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="client-images">
+          <div>
+            <img src="/images/customer-1.jpg" alt="" />
+          </div>
+          <div>
+            <img src="/images/customer-2.jpg" alt="" />
+          </div>
+          <div>
+            <img src="/images/customer-3.jpg" alt="" />
+          </div>
+          <div>
+            <img src="/images/customer-4.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of home  -->
+    <script>
+      document
+        .getElementById("mobileMenuBtn")
+        .addEventListener("click", function () {
+          document.getElementById("mobileMenu").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
